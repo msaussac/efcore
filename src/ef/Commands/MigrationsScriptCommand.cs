@@ -19,6 +19,7 @@ internal partial class MigrationsScriptCommand
             _to!.Value,
             _idempotent!.HasValue(),
             _noTransactions!.HasValue(),
+            _last!.HasValue(),
             Context!.Value());
 
         if (!_output!.HasValue())

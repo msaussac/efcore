@@ -424,6 +424,12 @@ namespace Microsoft.EntityFrameworkCore.Tools.Properties
             => GetString("NoTransactionsDescription");
 
         /// <summary>
+        ///     Target the last migration.
+        /// </summary>
+        public static string LastDescription
+            => GetString("LastDescription");
+
+        /// <summary>
         ///     Enable nullable reference types.
         /// </summary>
         public static string NullableDescription

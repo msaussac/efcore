@@ -291,6 +291,9 @@
   <data name="NoTransactionsDescription" xml:space="preserve">
     <value>Don't generate SQL transaction statements.</value>
   </data>
+  <data name="LastDescription" xml:space="preserve">
+    <value>Target the last migration.</value>
+  </data>
   <data name="OutputDescription" xml:space="preserve">
     <value>The file to write the result to.</value>
   </data>

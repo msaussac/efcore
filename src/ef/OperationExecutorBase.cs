@@ -190,6 +190,7 @@ internal abstract class OperationExecutorBase : IOperationExecutor
         string? toMigration,
         bool idempotent,
         bool noTransactions,
+        bool last,
         string? contextType)
         => InvokeOperation<string>(
             "ScriptMigration",
@@ -199,6 +200,7 @@ internal abstract class OperationExecutorBase : IOperationExecutor
                 ["toMigration"] = toMigration,
                 ["idempotent"] = idempotent,
                 ["noTransactions"] = noTransactions,
+                ["last"] = last,
                 ["contextType"] = contextType
             });
 

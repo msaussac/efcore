@@ -13,6 +13,7 @@ internal partial class MigrationsScriptCommand : ContextCommandBase
     private CommandOption? _output;
     private CommandOption? _idempotent;
     private CommandOption? _noTransactions;
+    private CommandOption? _last;
 
     public override void Configure(CommandLineApplication command)
     {
@@ -24,6 +25,7 @@ internal partial class MigrationsScriptCommand : ContextCommandBase
         _output = command.Option("-o|--output <FILE>", Resources.OutputDescription);
         _idempotent = command.Option("-i|--idempotent", Resources.IdempotentDescription);
         _noTransactions = command.Option("--no-transactions", Resources.NoTransactionsDescription);
+        _last = command.Option("--last", Resources.LastDescription);
 
         base.Configure(command);
     }

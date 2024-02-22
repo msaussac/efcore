@@ -32,7 +32,7 @@ internal interface IOperationExecutor : IDisposable
         bool suppressOnConfiguring,
         bool noPluralize);
 
-    string ScriptMigration(string? fromMigration, string? toMigration, bool idempotent, bool noTransactions, string? contextType);
+    string ScriptMigration(string? fromMigration, string? toMigration, bool idempotent, bool noTransactions, bool last, string? contextType);
 
     string ScriptDbContext(string? contextType);
     void HasPendingModelChanges(string? contextType);

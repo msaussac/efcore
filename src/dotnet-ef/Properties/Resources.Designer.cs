@@ -376,6 +376,12 @@ namespace Microsoft.EntityFrameworkCore.Tools.Properties
             => GetString("NoTransactionsDescription");
 
         /// <summary>
+        ///     Target the last migration.
+        /// </summary>
+        public static string LastDescription
+            => GetString("LastDescription");
+
+        /// <summary>
         ///     The file to write the result to.
         /// </summary>
         public static string OutputDescription
